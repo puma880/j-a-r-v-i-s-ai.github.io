@@ -1,0 +1,376 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body {
+    font-family:'Montserrat', sans-serif;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,1);
+    width:100%;
+    height:10vh;
+    z-index:5;
+}
+
+header img {
+    height:5vh;
+    position:fixed;
+    top:2.5vh;
+    left:5vw;
+}
+
+.nav {
+    width:100%;
+    height:100%;
+}
+
+.nav-list {
+    float:right;
+    display:flex;
+    gap:4vw;
+    height:100%;
+    align-items:center;
+    list-style:none;
+    margin-right:10%;
+}
+
+.nav-link {
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    font-size:1.25vw;
+}
+
+.hero {
+    background:black;
+    color:white;
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.hero svg {
+    position:absolute;
+    bottom:0px;
+    left:0;
+}
+
+.hero .grid {
+    width:80%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    margin-top:10%;
+}
+
+.hero .title {
+    margin-top:15%;
+    position:relative;
+    z-index:2;
+}
+
+.hero .grid h1 {
+    font-size:4vw;
+    font-weight:900;
+}
+
+.hero .grid p {
+    font-size:1.25vw;
+    line-height:1.5;
+    padding-top:3vh;
+    color:#bbb;
+}
+
+.hero .grid a {
+    font-size:1.25vw;
+    display:inline-block;
+    padding: 1.5vh 2vw;
+    margin-top:3vh;
+    margin-right:2vw;
+    background: linear-gradient(135deg, rgba(47,137,208,1) 0%, rgba(84,217,92,1) 100%);
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    text-transform:uppercase;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.hero .grid a:hover,
+.docs-contacts a:hover {
+    opacity:0.8;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.hero .grid img {
+    width:100%;
+    margin-bottom:20%;
+}
+
+.about {
+    width:100%;
+    min-height:100vh;
+    background:#f3f4f5;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.about h1 {
+    font-size:4vw;
+    font-weight:900;
+    color:black;
+    margin-left:10%;
+}
+
+.about p {
+    width:80%;
+    margin-left:10%;
+    padding-top:3vh;
+    font-size:1.5vw;
+    line-height:1.5;
+    font-weight:300;
+    color:#444;
+}
+
+.download {
+    width:100%;
+    min-height:150vh;
+    background-image:url('downloads.jpg');
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+.download svg {
+    position:absolute;
+    top:-50px;
+    left:0;
+}
+
+.download .grid {
+    position:absolute;
+    display:flex;
+    gap:10vw;
+    top:110vh;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.download .grid-element {
+    display:inline-block;
+    font-size:5vw;
+    color:white;
+}
+
+.download a {
+    text-decoration:none;
+    padding:2vh 2.5vw;
+    border-radius:15px;
+    transition:background 0.2s ease-in-out;
+}
+
+.download i {
+    color:white;
+    transition:background 0.2s ease-in;
+}
+
+.download a:hover {
+    background:white;
+    transition:background 0.2s ease-in;
+}
+
+.download a:hover > i {
+    color:black;
+    transition:color 0.2s ease-in-out;
+}
+.download .title {
+    color:white;
+    font-size:4vw;
+    font-weight:900;
+    text-align:center;
+    padding-top:30vh;
+}
+
+.docs-contacts {
+    width:100%;
+    min-height:100vh;
+    background:#f3f4f5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.docs-contacts .grid {
+    width:80%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.docs-contacts h1 {
+    font-size:4vw;
+    color:black;
+    font-weight:900;
+}
+
+.docs-contacts p {
+    font-size:1.5vw;
+    font-weight:300;
+    color:#444;
+    line-height:1.5;
+    padding-top:3vh;
+    width:90%;
+    display:block;
+}
+
+.contacts {
+    text-align:right;
+}
+
+.contacts .social-media {
+    font-size:3vw;
+    display:flex;
+    gap:2vw;
+    min-width:10%;
+    min-height:5%;
+    float:right;
+    padding-top:5vh;
+}
+
+.contacts .social-media-link {
+    text-decoration:none;
+    color:black;
+    transition:opacity 0.2s ease-in-out;
+}
+
+.docs-contacts .link {
+    display:inline-block;
+    margin-top:3vh;
+    padding:1.5vh 2vw;
+    text-transform:uppercase;
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+    background: linear-gradient(135deg, rgba(47,137,208,1) 0%, rgba(84,217,92,1) 100%);
+    transition:opacity 0.2s ease-in-out;
+}
+
+.footer {
+    background:#111;
+    width:100%;
+    height:50vh;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.footer .grid {
+    width:80%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap:3vw;
+}
+
+.footer .grid-element h1 {
+    font-size:2.5vw;
+    font-weight:900;
+}
+
+.footer .grid-element p {
+    font-size:1.25vw;
+    line-height:1.5;
+    color:#bbb;
+    font-weight:300;
+    padding-top:1vh;
+}
+
+.footer .grid-list {
+    display:flex;
+    flex-direction:column;
+    gap:2vh;
+    list-style:none;
+    margin-top:2vh;
+}
+
+.footer .grid-list a {
+    text-decoration:none;
+    color:#bbb;
+    font-weight:600;
+    transition: color 0.3s ease-in-out;
+}
+
+.grid-list a:hover {
+    color:white;
+    transition: color 0.3s ease-in-out;
+}
+
+.update {
+    padding:1vh;
+    border:5px solid white;
+    border-radius:15px;
+    margin-top:1vh;
+    transition:background 0.2s ease-in, color 0.2s ease-in-out;
+}
+
+.update:hover {
+    background:white;
+    color:black;
+    transition:background 0.2s ease-in, color 0.2s ease-in-out;
+}
+
+.update:hover > p {
+    color:#666;
+    transition:color 0.2s ease-in-out;
+}
+
+.footer .grid-element .version {
+    font-size:1.5vw;
+    font-weight:700;
+    display:inline-block;
+}
+
+.footer .grid-element .date {
+    font-size:1.5vw;
+    font-weight:300;
+    display:inline-block;
+    float:right;
+}
+
+.footer .grid-element .update p {
+    font-size:1vw;
+    transition:color 0.2s ease-in-out;
+}
+
+.footer .copyright {
+    padding-top:5vh;
+    color:#999;
+}
+
+.footer .social-media {
+    font-size:2.5vw;
+    display:flex;
+    gap:2vw;
+    min-width:10%;
+    min-height:5%;
+    padding-top:3vh;
+}
+
+.footer .social-media-link {
+    text-decoration:none;
+    color:white;
+    transition:opacity 0.2s ease-in-out;
+}

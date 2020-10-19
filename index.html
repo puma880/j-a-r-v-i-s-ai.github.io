@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>JARVIS | Home</title>
+</head>
+<body>
+<header>
+    <img src="JARVIS.png">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-list-element"><a onclick="document.getElementById('home').scrollIntoView(true);" class="nav-link">Home</a></li>
+            <li class="nav-list-element"><a onclick="document.getElementById('about').scrollIntoView(true);" class="nav-link">About</a></li>
+            <li class="nav-list-element"><a onclick="document.getElementById('download').scrollIntoView(true);" class="nav-link">Download</a></li>
+            <li class="nav-list-element"><a onclick="document.getElementById('docs-contacts').scrollIntoView(true);" class="nav-link">Docs</a></li>
+            <li class="nav-list-element"><a onclick="document.getElementById('docs-contacts').scrollIntoView(true);" class="nav-link">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="hero" id="home">
+        <div class="grid">
+            <div class="title">
+                <h1 class="convo">"Hey JARVIS!"<br>"Yes?"</h1>
+                <p class="description">Meet JARVIS, your personal assistant that can not only automate tasks, but can also help you use your time more efficiently. Read more to find out.</p>
+                <a onclick="document.getElementById('about').scrollIntoView(true);" class="button">Read More</a>
+                <a onclick="document.getElementById('download').scrollIntoView(true);" class="button">Download</a>
+            </div>
+            <div class="visualiser"><img src="gif.gif" alt="" class="gif"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#f3f4f5" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,186.7C384,203,480,245,576,266.7C672,288,768,288,864,288C960,288,1056,288,1152,282.7C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+    </div>
+    <div class="about" id="about">
+        <h1 class="title">'Unlike anything before'</h1>
+        <p class="description">J.A.R.V.I.S is a standalone personal AI assistant that listens to your voice using Google’s Speech API and uses AI generated speech to respond to your requests. Below are some other features of JARVIS - </p>
+        <p class="description">- automate tasks like opening apps, searching on browsers like Google and Firefox, opening and editing files, writing emails, telling the time, finding a location of your choice, etc. on your computer</p>
+        <p class="description">
+- Give daily reports of your computer usage, internet usage, app usage, amount of time sitting down and can even give recommendations based on this data. An example would be - ‘you have been sitting on your computer for over an hour, go outside and take a break!’.</p>
+        <p class="description">- allows you to schedule tasks to be done at a specific time. JARVIS will even remind you of certain tasks that need completing as those deadlines approach, making sure you don’t be late for anything!</p>
+    </div>
+    <div class="download" id="download">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,106.7C384,107,480,85,576,106.7C672,128,768,192,864,202.7C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <h1 class="title">Download JARVIS</h1>
+        <div class="grid">
+            <div class="grid-element"><a href="" class="link"><i class="fab fa-windows"></i></a></div>
+            <div class="grid-element"><a href="" class="link"><i class="fab fa-apple"></i></a></div>
+            <div class="grid-element"><a href="" class="link"><i class="fab fa-linux"></i></a></div>
+        </div>
+    </div>
+    <div class="docs-contacts" id="docs-contacts">
+        <div class="grid">
+            <div class="docs">
+                <h1 class="title">Get Started</h1>
+                <p class="description">Get started with JARVIS using our documentation. In it, we cover the basics of JARVIS - how JARVIS works, the  commands JARVIS can answer also with a simple installation process. The documentation also includes solutions to problems you might enounter with JARVIS.</p>
+                <a href="" class="link">Documentation</a>
+            </div>
+            <div class="contacts">
+                <h1 class="title">Get in Contact With Me</h1>
+                <p class="description" style="float:right; width:100%;">Get in contact with us using the following links below. Mention any new features we could add to JARVIS by heading over to GitHub. Connect with me via Linkedin or email me using the button below</p>
+                <div class="social-media">
+                    <a href="https://github.com/J-A-R-V-I-S-ai" class="social-media-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rudra-sekhri-02162219b/" class="social-media-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:rudrasekhri@gmail.com" class="social-media-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid">
+            <div class="grid-element">
+                <h1 class="title">About</h1>
+                <p class="description">J.A.R.V.I.S is a standalone personal AI assistant that listens to your voice using Google’s Speech API and uses AI generated speech to respond to your requests.</p>
+            </div>
+            <div class="grid-element">
+                <h1 class="title">Links</h1>
+                <ul class="grid-list">
+                    <li class="grid-list-element"><a onclick="document.getElementById('home').scrollIntoView(true);" class="grid-link">Home</a></li>
+                    <li class="grid-list-element"><a onclick="document.getElementById('about').scrollIntoView(true);" class="grid-link">About</a></li>
+                    <li class="grid-list-element"><a onclick="document.getElementById('download').scrollIntoView(true);" class="grid-link">Download</a></li>
+                    <li class="grid-list-element"><a onclick="document.getElementById('docs-contacts').scrollIntoView(true);" class="grid-link">Docs</a></li>
+                    <li class="grid-list-element"><a onclick="document.getElementById('docs-contacts').scrollIntoView(true);" class="grid-link">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="grid-element">
+                <h1 class="title">Updates</h1>
+                <div class="update">
+                    <h1 class="version">v0.1</h1>
+                    <h2 class="date">25 Apr</h2>
+                    <p class="description">Added Speech Recognition</p>
+                </div>
+                <div class="update">
+                    <h1 class="version">v0.1</h1>
+                    <h2 class="date">25 Apr</h2>
+                    <p class="description">Added Speech Recognition</p>
+                </div>
+            </div>
+            <div class="grid-element">
+                <h1 class="title">Contacts</h1>
+                <p class="description">Check out the JARVIS app on GitHub. Connect with me via Linkedin or through email</p>
+                <div class="social-media">
+                    <a href="https://github.com/J-A-R-V-I-S-ai" class="social-media-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rudra-sekhri-02162219b/" class="social-media-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:rudrasekhri@gmail.com" class="social-media-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright &copy; 2020. All Rights Reserved. Developed by Rudra Sekhri.</p>
+    </div>
+</body>
+</html>
